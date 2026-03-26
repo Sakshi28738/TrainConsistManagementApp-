@@ -4,26 +4,19 @@ public class TrainConsistManagementApp {
 
     public static void main(String[] args) {
 
+        // Display welcome banner
         System.out.println("==================================");
-        System.out.println("UC6 - Map Bogie to Capacity (HashMap)");
+        System.out.println("=== Train Consist Management App ===");
         System.out.println("==================================\n");
 
+        // Create a dynamic list to store train bogies
+        List<String> trainConsist = new ArrayList<>();
 
-        Map<String, Integer> capacityMap = new HashMap<>();
+        // Display initial consist information
+        System.out.println("Train initialized successfully...");
+        System.out.println("Initial Bogie Count : " + trainConsist.size());
+        System.out.println("Current Train Consist : " + trainConsist);
 
-
-        capacityMap.put("First Class", 24);
-        capacityMap.put("Cargo", 120);
-        capacityMap.put("Sleeper", 72);
-        capacityMap.put("AC Chair", 56);
-
-
-        System.out.println("Bogie Capacity Details:");
-
-        for (Map.Entry<String, Integer> entry : capacityMap.entrySet()) {
-            System.out.println(entry.getKey() + " -> " + entry.getValue());
-        }
-
-        System.out.println("\nUC6 bogie-capacity mapping completed...");
+        System.out.println("\nSystem ready for operations...");
     }
 }
